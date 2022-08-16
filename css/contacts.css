@@ -1,0 +1,467 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body
+{
+    background-color: #1A191F;
+}
+a:hover
+{
+    text-decoration: none;
+}
+.headContainer
+{
+    height: 7rem;
+    background-color: #1A191F;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.siteName
+{
+    font-size: 3rem;
+    position: absolute;
+    left: 12rem;
+    margin-top: 1.5rem;
+}
+#wPart
+{
+    color: white;
+}
+#yPart
+{
+    color: #F9AB00;
+}
+.moreButton
+{
+    display: none;
+    cursor: pointer;
+}
+.moreButton:hover
+{
+    color: orange;
+}
+.buttons
+{
+    font-size: 1.3rem;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: #F9AB00;
+    padding: 1rem;
+    box-sizing: content-box;
+    height:fit-content;
+    position: absolute;
+    right: 5rem;
+    top: 1.5rem;
+}
+.buttons a
+{
+    color: white;
+}
+.listItems
+{
+    font-size: 1.2rem;
+    padding: 1rem;
+    position: absolute;
+    right: 55rem;
+    top: 1.5rem;
+    width: 20rem;
+}
+.listItems ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: -10rem;
+}
+.listItems ul li
+{
+    position: relative;
+    height: 7rem;
+    top: -2.5rem;
+    width: 9rem;
+    text-align: center;
+    margin-left: 1.1rem;
+}
+.listItems ul li:hover
+{
+    cursor: pointer;
+    background-color: #222028;
+}
+.listItems ul li a
+{
+    position: relative;
+    top: 2.2rem;
+    color: white;
+}
+.listItems ul li a:hover
+{
+    color: #F9AB00;
+}
+.listofThings
+{
+    position: absolute;
+    margin-top: 7.2rem;
+    right: 2rem;
+    height: 15rem;
+    width: 15rem;
+    background-color: #2a2831;
+    border-radius: 7%;
+
+}
+.searchPart
+{
+    font-size: 1.3rem;
+    padding: 1rem;
+    position: absolute;
+    right: 15rem;
+    top: 1.5rem;
+}
+.hiddenList li
+{
+    width: 15rem;
+    list-style: none;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    text-align: center;
+}
+.hiddenList li a
+{
+    color: white;
+}
+#searchBox
+{
+    background-color: #222028;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 5%;
+    color: white;
+}
+.picContainer
+{
+    height: 20rem;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("Images/seats.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#textOnPic
+{
+    font-size: 4rem;
+    text-align: center;
+    color: whitesmoke;
+    position: absolute;
+    top: 18rem;
+    left: 5rem;
+    
+}
+.containerAll
+{
+    background-color: #1A191F;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5rem;
+}
+.textHead h1
+{
+    font-size: 3rem;
+}
+.formContainer
+{
+    width: 50%;
+    height: 40rem;
+    border-radius: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#33313b;
+    margin-right: 2rem;
+    padding: 2rem;
+}
+.formContainer:hover
+{
+    border-color: #F9AB00;
+    width: 52%;
+    transition: 0.1s ease-out;
+    -moz-box-shadow: 1px 2px 3px #F9AB00;
+    -webkit-box-shadow: 1px 2px 3px #F9AB00;
+    box-shadow: 1px 2px 3px #F9AB00;
+}
+.infoContainer:hover
+{
+    border-color: #F9AB00;
+    width: 42%;
+    transition: 0.1s ease-out;
+    -moz-box-shadow: 1px 2px 3px #F9AB00;
+    -webkit-box-shadow: 1px 2px 3px #F9AB00;
+    box-shadow: 1px 2px 3px #F9AB00;
+}
+.form__input
+{
+    background-color: #33313b;
+    color: white;
+    border-style: solid;
+    border-color: #33313b;
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 2px;
+}
+.form__textarea
+{
+    background-color: #33313b;
+    color: white;
+    border-style: solid;
+    border-color: #33313b;
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 2px;
+    height: 10rem;
+}
+.form__btn
+{
+    background-color: #e69d02;
+    color: white;
+    border-style: solid;
+    border-color: #e69d02;
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 2px;
+}
+.form__btn:hover
+{
+    background-color: #6d4d08;
+    border-color: #6d4d08;
+}
+.fillParts
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.2rem auto;
+}
+.fillParts div
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.infoContainer
+{
+    width: 40%;
+    height: 40rem;
+    border-radius: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#33313b;
+    margin-right: 2rem;
+    padding: 2rem;
+}
+.headInfo h1
+{
+    font-size: 3rem;
+}
+.restInfo>.iconInfo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.restInfo>.textInfo p
+{
+    font-size: 1.5rem;
+}
+.restInfo>.iconInfo ul 
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.restInfo>.iconInfo ul li
+{
+    margin: 0.5rem;
+    font-size: 3rem;
+}
+.textadd
+{
+    width: 10rem;
+}
+#listHidden
+{
+    z-index: -2;
+}
+.FooterPart{
+    background-color: #1A191F;
+    position: absolute;
+    margin-bottom: 0;
+    height: 15rem;
+    width: 100%;
+    border-color:#33313b;
+    border-width: 1px;
+    border-top: solid;
+}
+.FooterPart>.footPart
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.FooterPart h3
+{
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+#yelName
+{
+    color: #F9AB00;
+}
+.spans{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem 0;
+    position: absolute;
+}
+.spans ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.spans ul li a{
+    text-align: center;
+    font-size: 5rem;
+    padding: 0 1rem;
+    color:  white;
+}
+.spans ul li a i:hover{
+    color:#F9AB00;
+}
+#twitterIcon{
+    background-color: white;
+color: #1A191F;
+}
+#twitterIcon:hover{
+background-color: #F9AB00;
+}
+ul li{
+    list-style: none;
+    
+}
+@media screen and (min-width:1100px)
+{
+    .listofThings
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1100px) 
+{
+    .moreButton
+    {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        padding: 1rem;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+
+    }
+    .listItems
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:660px) 
+{
+    #searchBox
+    {
+        margin-left: 2rem;
+    }
+    .nameOf
+    {
+        font-size: 2rem;
+    }
+    .siteName
+    {
+        left: 5rem;
+    }
+}
+@media screen and (max-width:540px) 
+{
+    #searchBox
+    {
+        width: 15rem;
+    }
+}
+@media screen and (max-width:840px) 
+{
+    .part1
+{
+    height:150rem ;
+
+}
+.FooterPart{
+    position: absolute;
+    margin-bottom: 0;
+}
+}
+@media screen and (max-width:770px) 
+{
+    .part1
+{
+    height:180rem ;
+
+}
+.FooterPart{
+    position: absolute;
+    margin-bottom: 0;
+}
+}
+
+@media screen and (max-width:765px) 
+{
+    .containerAll
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .formContainer
+    {
+        margin: 5rem;
+        width: 90%;
+    }
+    .formContainer:hover
+    {
+        width: 90%;
+        transition: 0.1s ease-out;
+    }
+    .infoContainer
+    {
+        margin: 5rem;
+        width: 90%;
+    }
+    .infoContainer:hover
+    {
+        width: 90%;
+        transition: 0.1s ease-out;
+    }
+}

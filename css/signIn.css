@@ -1,0 +1,140 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body
+{
+    background-image: url('../Images/seats.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10%;
+}
+.containerBoard
+{
+    position: relative;
+    margin: 7rem auto;
+    left: 0%;
+    width: 40rem;
+    height: 60rem;
+    background-color: #222028;
+    border-style: solid;
+    border-color: #222028;
+    border-radius: 2px;
+}
+.headPart
+{
+    position: absolute;
+    left: 10rem;
+    margin-top: 12rem;
+}
+.headPart a
+{
+    text-decoration: none;
+    font-size: 3.5rem;
+    text-align: center;
+}
+#wPart
+{
+    color: white;
+}
+#yPart
+{
+    color: #F9AB00;
+}
+.inputPart
+{
+    position: absolute;
+    margin-top: 20rem;
+}
+.form__input
+{
+    background-color: #33313b;
+    color: white;
+    border-style: solid;
+    border-color: #33313b;
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 2px;
+}
+.form__btn
+{
+    background-color: #222028;
+    color: white;
+    border-style: solid;
+    border-color: #e69d02;
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    margin-top: 6rem;
+    width:32rem;
+    height: 5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+.form__btn:hover
+{
+    background-color: #a57713;
+    border-color: #a57713;
+    text-decoration: none;
+    color: white;
+    cursor:pointer;
+}
+.fillParts
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.2rem auto;
+}
+.fillParts div
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.otherPart
+{
+    position: absolute;
+    margin-top: 30rem;
+    left: 20%;
+}
+.otherPart h2
+{
+    font-size: 1.5rem;
+    color: white;
+}
+.otherPart h2 a
+{
+    text-decoration: none;
+    color: #e69d02;
+    font-size: 1.7rem;
+}
+.chechbox
+{
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    right: -1%;
+    top: 50%;
+    margin-right: -5%;
+
+}
+label
+{
+    position: absolute;
+    left: 15%;
+    margin-left: -5%;
+}
+.chechbox a
+{
+    text-decoration: none;
+    color: #e69d02;
+}

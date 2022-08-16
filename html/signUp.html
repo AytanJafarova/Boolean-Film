@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel = "icon" href = "../Images/titlePlay.png">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <title>Bool Movie</title>
+</head>
+<body>
+   <div class="container">
+       <div class="containerBoard">
+           <div class="headPart">
+            <a href="../html/home.html" class="nameOf"><span id="wPart">BOOL</span><span id="yPart">MOVIE</span></a>
+           </div>
+           <div class="inputPart">
+                <div class="fillParts col-12">
+
+                    <div class="col-12">
+                        <input type="text" class="form__input" placeholder="Name" id="name">
+                    </div>
+
+                    <div class="col-12">
+                        <input type="text" class="form__input" placeholder="Mail" id="mail">
+                    </div>
+
+                    <div class="col-12">
+                        <input type="text" class="form__input" placeholder="Password" id="password">
+                    </div>
+                    <div class=" col-12 chechbox">
+                        <input id="select" name="select" type="checkbox" checked="checked">
+                        <label for="select">I agree to the <a href="../html/privacy.html">Privacy Policy</a></label>
+                    </div>
+                    <div class="col-12 btnSignUp">
+                         <a class="form__btn" id="btnSignUp"  onclick="checkInputs()">Sign Up</a>
+                    </div>
+                    <div class="otherPart">
+                        <h2>Already have an account? <a href="../html/signIn.html">Sign in!</a> </h2>
+                    </div>
+                </div>
+
+            </div>
+           </div>
+       </div>
+   </div>
+    <script src="../js/signUp.js"></script>
+</body>
+</html>

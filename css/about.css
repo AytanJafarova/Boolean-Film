@@ -1,0 +1,368 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1A191F;
+}
+a:hover
+{
+    text-decoration: none;
+}
+.headContainer
+{
+    height: 7rem;
+    background-color: #1A191F;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.siteName
+{
+    font-size: 3rem;
+    position: absolute;
+    left: 12rem;
+    margin-top: 1.5rem;
+}
+#wPart
+{
+    color: white;
+}
+#yPart
+{
+    color: #F9AB00;
+}
+.moreButton
+{
+    display: none;
+    cursor: pointer;
+}
+.moreButton:hover
+{
+    color: orange;
+}
+.buttons
+{
+    font-size: 1.3rem;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: #F9AB00;
+    padding: 1rem;
+    box-sizing: content-box;
+    height:fit-content;
+    position: absolute;
+    right: 5rem;
+    top: 1.5rem;
+}
+.buttons a
+{
+    color: white;
+}
+.listItems
+{
+    font-size: 1.2rem;
+    padding: 1rem;
+    position: absolute;
+    right: 55rem;
+    top: 1.5rem;
+    width: 20rem;
+}
+.listItems ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: -10rem;
+}
+.listItems ul li
+{
+    position: relative;
+    height: 7rem;
+    top: -2.5rem;
+    width: 9rem;
+    text-align: center;
+    margin-left: 1.1rem;
+}
+.listItems ul li:hover
+{
+    cursor: pointer;
+    background-color: #222028;
+}
+.listItems ul li a
+{
+    position: relative;
+    top: 2.2rem;
+    color: white;
+}
+.listItems ul li a:hover
+{
+    color: #F9AB00;
+}
+.listofThings
+{
+    position: absolute;
+    margin-top: 7.2rem;
+    right: 2rem;
+    height: 15rem;
+    width: 15rem;
+    background-color: #2a2831;
+    border-radius: 7%;
+
+}
+#listHidden
+{
+    z-index: -2;
+}
+.searchPart
+{
+    font-size: 1.3rem;
+    padding: 1rem;
+    position: absolute;
+    right: 15rem;
+    top: 1.5rem;
+}
+.hiddenList li
+{
+    width: 15rem;
+    list-style: none;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    text-align: center;
+}
+.hiddenList li a
+{
+    color: white;
+}
+#searchBox
+{
+    background-color: #222028;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 5%;
+    color: white;
+}
+.picContainer
+{
+    height: 20rem;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("Images/seats.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#textOnPic
+{
+    font-size: 4rem;
+    text-align: center;
+    color: whitesmoke;
+    position: absolute;
+    top: 18rem;
+    left: 5rem;
+    
+}
+.containerAll
+{
+    position: relative;
+    top: 0;
+    background-color: #1A191F;
+    color: white;
+}
+.part1
+{
+    height: 120rem;
+    position: relative;
+    top: 5rem;
+    min-height: max-content;
+    margin-bottom: 10rem;
+}
+.part1 h3
+{
+    position: relative;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    padding-left: 5rem;
+}
+.part1 p
+{
+    position: relative;
+    top: 3rem;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+.adds
+{
+    position: relative;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8rem;
+    margin-bottom: 10rem;
+}
+
+.info
+{
+    border-style: solid;
+    border-color: #F9AB00;
+    height: 25rem;
+    border-width: 0.5px;
+}
+.info:hover
+{
+    background-color: #222028;
+    transition: 0.5s;
+    box-shadow: 10px 10px rgba(37, 37, 37, 0.5);
+    height: 27rem;
+    transform: scaleX(2) 0.5s;
+}
+.info__title
+{
+    margin-top: -4rem;
+}
+.info i
+{
+    font-size: 3rem;
+    color: #F9AB00;
+    position: relative;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.FooterPart{
+    background-color: #1A191F;
+    position: absolute;
+    margin-bottom: 0;
+    height: 15rem;
+    width: 100%;
+    border-color:#33313b;
+    border-width: 2px;
+    border-top: solid;
+}
+.FooterPart>.footPart
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.FooterPart h3
+{
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+#yelName
+{
+    color: #F9AB00;
+}
+.spans{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem 0;
+    position: absolute;
+}
+.spans ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.spans ul li a{
+    text-align: center;
+    font-size: 5rem;
+    padding: 0 1rem;
+    color:  white;
+}
+.spans ul li a i:hover{
+    color:#F9AB00;
+}
+#twitterIcon{
+    background-color: white;
+color: #1A191F;
+}
+#twitterIcon:hover{
+background-color: #F9AB00;
+}
+ul li{
+    list-style: none;
+    
+}
+@media screen and (min-width:1100px)
+{
+    .listofThings
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:1100px) 
+{
+    .moreButton
+    {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        padding: 1rem;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+
+    }
+    .listItems
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:840px) 
+{
+    .part1
+{
+    height:150rem ;
+
+}
+.FooterPart{
+    bottom: -130rem;
+}
+}
+@media screen and (max-width:770px) 
+{
+    .part1
+{
+    height:180rem ;
+
+}
+.FooterPart{
+    bottom: -210rem;
+}
+}
+
+@media screen and (max-width:660px) 
+{
+    #searchBox
+    {
+        /* display: none; */
+        margin-left: 2rem;
+    }
+    .nameOf
+    {
+        font-size: 2rem;
+    }
+    .siteName
+    {
+        left: 5rem;
+    }
+}
+@media screen and (max-width:540px) 
+{
+    #searchBox
+    {
+        width: 15rem;
+    }
+}

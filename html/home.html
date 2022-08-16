@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel = "icon" href = "../Images/titlePlay.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Bool Movie</title>
+</head>
+<body>
+    <div class="headContainer">
+
+        <div class="siteName">
+            <a href="" class="nameOf"><span id="wPart">BOOL</span><span id="yPart">MOVIE</span></a>
+        </div>
+
+        <div class="moreButton"  onclick="showMore()">
+            <i class="fas fa-bars"></i> </a> 
+        </div> 
+
+        <div class="listofThings" id="listHidden">
+            <ul class="hiddenList">
+                <li><a href="../html/home.html">HOME</a></li>
+                <li><a href="../html/about.html">ABOUT</a></li>
+                <li><a href="../html/contacts.html">CONTACTS</a></li>
+                <li style="width: 12rem;"><a href="../html/policy.html">PRIVACY POLICY</a></li>
+            </ul>
+        </div>
+
+        <div class="listItems">
+            <ul>
+                <li><a href="../html/home.html">HOME</a></li>
+                <li><a href="../html/about.html">ABOUT</a></li>
+                <li><a href="../html/contacts.html">CONTACTS</a></li>
+                <li style="width: 9rem;"><a href="../html/policy.html">PRIVACY POLICY</a></li>
+            </ul>
+        </div>
+
+        <div class="searchPart" id="searchMovie">
+            <input type="text" id="searchBox" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+        
+        <div class="buttons">
+            <a href="../html/signIn.html" id="signInBtn">SIGN IN</a>
+        </div>
+
+    </div>
+
+    <div class="containerFirst" id="headFilms">
+        <div class="headFirst">
+            <div class="controlButtons">
+                <a id="btnPrev" onclick="nextSlide(-1)">&#10094;</a>
+                <a id="btnNext" onclick="nextSlide(1)">&#10095;</a>
+            </div>
+        </div>
+        <img src="../Images/silence.jpg" alt="" class="slides transitionSlide">
+        <img src="../Images/mucize.jpg" alt="" class="slides transitionSlide">
+        <img src="../Images/harryPotter.jpg" alt="" class="slides transitionSlide">
+        <img src="../Images/jumanji.jpg" alt="" class="slides transitionSlide">
+        <img src="../Images/homeAlone.jpg" alt="" class="slides transitionSlide">  
+        
+    </div>
+    <div class="searchFilm">
+        <div class="searchName">
+            <form id="searchMovies">
+                <input type="text" id="searchNamefilm" placeholder=" Search by name...">
+                <i class="fas fa-search"></i>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="containerMain" id="mainFilm">
+
+    </div>
+     <div class="FooterPart">
+        <div class="footPart">
+            <span class="icons spans"> 
+                <ul>
+                    <li> <a href="https://twitter.com/"><i class="fab fa-twitter iconlar" id="twitterIcon" style="border-radius: 5rem; padding: 1rem; font-size: 3.5rem;"></i></a> </li>
+                    <li> <a href="https://www.facebook.com/"><i class="fab fa-facebook iconlar" style=" padding: 1rem;"></i></a></li>
+                    <li> <a href="https://github.com/"> <i class="fab fa-github iconlar"></i></a></li>
+                </ul>
+            </span>  
+            <h3>Created by <span id="yelName">Aytan Jafarova</span> </h3>
+        </div>
+    </div>
+
+
+    <script src="../js/home.js"></script>
+</body>
+</html>

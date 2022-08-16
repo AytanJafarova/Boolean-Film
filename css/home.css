@@ -1,0 +1,558 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1A191F;
+}
+body
+{
+    background-color: #1A191F;
+}
+a:hover
+{
+    text-decoration: none;
+}
+.headContainer
+{
+    height: 7rem;
+    background-color: #1A191F;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.siteName
+{
+    font-size: 3rem;
+    position: absolute;
+    left: 12rem;
+    margin-top: 1.5rem;
+}
+#wPart
+{
+    color: white;
+}
+#yPart
+{
+    color: #F9AB00;
+}
+#listHidden
+{
+    z-index: -2;
+}
+.moreButton
+{
+    display: none;
+    cursor: pointer;
+}
+.moreButton:hover
+{
+    color: orange;
+}
+.buttons
+{
+    font-size: 1.3rem;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: #F9AB00;
+    padding: 1rem;
+    box-sizing: content-box;
+    height:fit-content;
+    position: absolute;
+    right: 5rem;
+    top: 1.5rem;
+}
+.buttons a
+{
+    color: white;
+}
+.listItems
+{
+    font-size: 1.2rem;
+    padding: 1rem;
+    position: absolute;
+    right: 55rem;
+    top: 1.5rem;
+    width: 20rem;
+}
+.listItems ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: -10rem;
+}
+.listItems ul li
+{
+    position: relative;
+    height: 7rem;
+    top: -2.5rem;
+    width: 9rem;
+    text-align: center;
+    margin-left: 1.1rem;
+}
+.listItems ul li:hover
+{
+    cursor: pointer;
+    background-color: #222028;
+}
+.listItems ul li a
+{
+    position: relative;
+    top: 2.2rem;
+    color: white;
+}
+.listItems ul li a:hover
+{
+    color: #F9AB00;
+}
+
+.showList
+{
+    display:block
+}
+.listofThings
+{
+    position: absolute;
+    margin-top: 7.2rem;
+    right: 2rem;
+    height: 15rem;
+    width: 15rem;
+    background-color: #2a2831;
+    border-radius: 7%;
+}
+.searchPart
+{
+    font-size: 1.3rem;
+    padding: 1rem;
+    position: absolute;
+    right: 15rem;
+    top: 1.5rem;
+}
+.hiddenList li
+{
+    width: 15rem;
+    list-style: none;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    text-align: center;
+}
+.hiddenList li a
+{
+    color: white;
+}
+#searchBox
+{
+    background-color: #222028;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 5%;
+    color: white;
+}
+.containerFirst
+{
+
+    height: 55rem;
+    background-color: #615a80;
+    color: white;
+    position: relative;
+    top: -2rem;
+}
+.containerFirst img
+{
+        width: 100%;
+        height: 100%;
+}
+#btnPrev
+{
+    position: absolute;
+    margin-left: 5%;
+    font-size: 8rem;
+    color: white;
+
+}
+#btnNext
+{
+    position: absolute;
+    margin-left: 85%;
+    font-size: 8rem;
+    color: white;
+}
+.headFirst
+{
+    width: 100%;
+    margin:2rem auto;
+}
+.headFirst h2
+{
+    position: absolute;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+}
+.headFirst a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.controlButtons
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15rem;
+    width: 100%;
+}
+.controlButtons a
+{
+    transition: transform .2s ease-in;
+    cursor: pointer;
+}
+.controlButtons a:hover
+{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.slides
+{
+    display: none;
+}
+.card
+{
+    margin: 1.5rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    border-style: solid;
+    border-color:rgb(0, 0, 0,0);
+    background-color: rgb(0, 0, 0,0);
+    cursor: pointer;
+    transition: transform .2s ease-in;
+}
+.transitionSlide
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.card img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    border-style: solid;
+    border-color:rgb(0, 0, 0,0);
+}
+.card__title
+{
+    text-align: center;
+}
+.containerMain
+{
+    margin-top: 10rem;
+    bottom: 5rem;
+    width: 100%;
+    background-color: #2a2831;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.card:hover
+{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.film
+{
+    width: 300px;
+    margin: 2rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+transition: transform 0.5s ease-in;
+}
+.film img
+{
+    width: 100%;
+}
+.film-info
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: .5px;
+    padding: .5rem 1rem 1rem;
+
+}
+.film-info h3
+{
+    margin-top: 0;
+}
+.film-info span
+{
+    padding: .25rem .5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+.film-info span.green
+{
+    color: rgb(74, 141, 74);
+}
+.film-info span.orange
+{
+    color: orange;
+}
+.film-info span.red
+{
+    color: red;
+}
+.overview
+{
+    background-color: #4e495e;
+    color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform .6s ease-in;
+    font-size: 1.5rem;
+}
+.film:hover
+{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.film:hover .overview
+{
+    transform: translateY(0);
+
+}
+
+
+.searchFilm
+{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    height: 20rem;
+    margin: 3rem auto;
+    width: 100%;
+}
+.searchName
+{
+    width: 50%;
+    position: relative;
+    margin-right: 8%;
+}
+.searchName i
+{
+    color: orange;
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+.searchGenre
+{
+    width: 30%;
+    position: relative;
+    margin-top: 0.2%;
+}
+#searchNamefilm
+{
+    font-size: 2.5rem;
+    color: orange;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #222028;
+    width: 100%;
+    outline: none;
+}
+#selectGenre
+{
+    font-size: 2.5rem;
+}
+.form-select
+{
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #222028;
+    font-size: 2rem;
+    color: white;
+    background-color: #222028;
+    width: 80%;
+}
+.FooterPart{
+    background-color: #1A191F;
+    position: absolute;
+    margin-bottom: -50%;
+    height: 15rem;
+    width: 100%;
+    border-color:#33313b;
+    border-width: 2px;
+    border-top: solid;
+}
+.FooterPart>.footPart
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.FooterPart h3
+{
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+#yelName
+{
+    color: #F9AB00;
+}
+.spans{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem 0;
+    position: absolute;
+}
+.spans ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.spans ul li a{
+    text-align: center;
+    font-size: 5rem;
+    padding: 0 1rem;
+    color:  white;
+}
+.spans ul li a i:hover{
+    color:#F9AB00;
+}
+#twitterIcon{
+    background-color: white;
+color: #1A191F;
+}
+#twitterIcon:hover{
+background-color: #F9AB00;
+}
+ul li{
+    list-style: none;
+
+}
+@media screen and (min-width:1100px)
+{
+    .listofThings
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:1100px)
+{
+    .moreButton
+    {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        padding: 1rem;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+
+    }
+    .listItems
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:660px)
+{
+    #searchBox
+    {
+        /* display: none; */
+        margin-left: 2rem;
+    }
+    #searchNamefilm
+    {
+        font-size: 2rem;
+    }
+    #selectGenre
+    {
+        font-size: 2rem;
+    }
+    .nameOf
+    {
+        font-size: 2rem;
+    }
+    .siteName
+    {
+        left: 5rem;
+    }
+}
+@media screen and (max-width:540px)
+{
+    #searchBox
+    {
+        width: 15rem;
+    }
+}
+@media screen and (max-width:840px)
+{
+    .part1
+{
+    height:150rem ;
+
+}
+}
+@media screen and (max-width:770px)
+{
+    .part1
+{
+    height:180rem ;
+
+}
+}
